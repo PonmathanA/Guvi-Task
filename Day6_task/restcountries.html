@@ -35,12 +35,13 @@
                 console.log("Total Population of Countries:", totalPopulation);
 
                 let countriesUsingUSD = data.filter((country)=>{
-                    return country.currencies === "USD";
+                    return country.currencies === "United States dollor";
                 });
+                
+                console.log("Countries Using US Dollar as Currency:", countriesUsingUSD);
                 countriesUsingUSD.forEach((country)=>{
                     console.log(country.name);
                 });
-                console.log("Countries Using US Dollar as Currency:", countriesUsingUSD);
                 
         }
     </script>
